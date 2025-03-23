@@ -1,0 +1,82 @@
+/* 主体颜色修改为另一种浅色系 */
+.gonggong-layout-layout .ant-layout-has-sider .gonggong-layout-sider-container,
+.gonggong-layout-layout .gonggong-layout-sider,
+.gonggong-layout-layout .gonggong-layout-sider .ant-menu,
+.gonggong-layout-layout .gonggong-layout-header,
+.ant-modal-content,
+.ant-modal-header,
+.ant-modal,
+.page-content {
+  background-image: url(https://pic.sogou.com/d?query=%E5%8D%8E%E4%B8%9C%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6&forbidqc=&entityid=&preQuery=&rawQuery=&queryList=&st=&channel=pc_pic&scene=pic_result&did=3/image/bg.gif);
+}
+
+.gonggong-layout-layout .gonggong-layout-header {
+  box-shadow: 0px 1px 0px 0px #d0e8f1; /* 浅蓝色阴影 */
+}
+
+.gonggong-layout-layout .ant-layout-has-sider .gonggong-layout-sider-container {
+  border-right: 1px solid #c7e7f1; /* 浅蓝色边框 */
+}
+
+.ant-menu-vertical {
+  border-right: 1px solid #c7e7f1; /* 垂直菜单浅蓝色边框 */
+}
+
+.gonggong-layout-layout .gonggong-layout-sider .ant-menu {
+  color: #2e8b57; /* 绿色菜单文字 */
+}
+
+.page-content .xuelangyun-basic-form .ant-row .ant-form-item-label>label,
+.ant-modal-title,
+.ant-picker-input>input,
+.ant-select-selection-item {
+  color: #2e8b57 !important; /* 绿色文字 */
+}
+
+.ant-input-affix-wrapper,
+.ant-input,
+.ant-input-number,
+.ant-picker {
+  border: 1px solid #afeeee; /* 浅蓝色输入框边框 */
+  background: #e0ffff; /* 浅蓝色输入框背景 */
+  color: #006400; /* 深绿色输入框文字 */
+}
+
+.ant-pagination .ant-pagination-total-text,
+.ant-pagination.mini .ant-pagination-prev,
+.ant-pagination.mini .ant-pagination-next,
+.ant-pagination-options .ant-select:not(.ant-select-customize-input) .ant-select-selector,
+.chart-empty,
+.ant-empty-normal {
+  color: #2e8b57 !important; /* 绿色分页器和空状态文字 */
+}
+
+.ant-table-thead {
+  background: #afeeee; /* 浅蓝色表头背景 */
+}
+
+.ant-table-tbody>tr>td,
+.ant-table-thead>tr>th {
+  border-bottom: 1px solid #b0e0e6; /* 浅蓝色表格边框 */
+}
+
+.ant-pagination .ant-pagination-item-active {
+  border: 1px solid #2e8b57 !important; /* 绿色分页器活动状态边框 */
+}
+
+.anticon-fullscreen,
+.anticon-close-circle {
+  color: #2e8b57; /* 绿色图标 */
+}
+
+.ant-modal-header {
+  border-bottom: 1px solid #2e8b57; /* 绿色模态框头部边框 */
+}
+
+.ant-modal {
+  border: 1px solid #2e8b57; /* 绿色模态框边框 */
+}
+
+.app-logo {
+  width: 14.615vw !important;
+}

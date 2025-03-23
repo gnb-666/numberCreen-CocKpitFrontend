@@ -1,0 +1,55 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-06-30 23:19:31
+ * @LastEditTime: 2021-07-01 00:11:00
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \d3\dist\index.html
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="./bundle.js"></script> -->
+  
+  <!-- <script src="./data.js"></script> -->
+  <title>Document</title>
+</head>
+<body>
+  <div id="kg" style="width:1200px; height: 600px; background: #373e41;"></div>
+  
+  <script>
+    const target = document.getElementById('kg')
+    
+    const {nodes, links} = data
+    const method1 = () => console.log('外部事件1：点击了画布')
+    const method2 = n =>  console.log('外部事件2：点击了节点->' + n.name)
+    const method3 = n =>  {
+      console.log('外部事件3：点击了节点->')
+      console.log(n)
+    }
+
+
+    const menu = {}
+    
+    kg.init(target)
+    kg.setOption({
+      nodes,
+      links,
+      menu,
+      events: {
+        canvas: [
+          {type: 'click', method: method1}
+        ],
+        node: [
+          {type: 'click', method: method2},
+          {type: 'click', method: method3},
+        ]
+      },
+      dragLock: true
+    })
+
+
+  </script>
+</body>
+</html>

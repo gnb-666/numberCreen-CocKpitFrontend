@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSONP Test</title>
+    <script>
+        function myCallbackFunction(data) {
+            console.log(data);
+        }
+
+        window.onload = function() {
+            var script = document.createElement("script");
+            script.src = "http://10.69.1.121/hufu/api/v1/restData/QH?apiToken=e9fb238ed3074c0983cc352b85a38edd&callback=myCallbackFunction";
+            script.type="text/javascript"
+            document.body.appendChild(script);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
